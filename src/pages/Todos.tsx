@@ -3,12 +3,13 @@ import { Controls, TodoList } from "../Components/index";
 import { useAppSelector } from "../hook/hook";
 
 export const Todos = () => {
-  const todos = useAppSelector((state) => state.todo.todos);
+    const todos = useAppSelector((state) => state.todo.todos);
 
-  return (
-    <div>
-      <Controls />
-      <TodoList todos={todos} />
-    </div>
-  );
+    return (
+        <div>
+            <h1 className="text-gray-200 text-5xl text-center">React Todo</h1>
+            <Controls />
+            <TodoList todos={todos} />
+        </div>
+    );
 };
