@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Controls, TodoList } from "./Components/index";
+import { Controls, TodoList } from "./Components/";
 import { useAppSelector } from "./hook/hook";
 
 const App = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoItem } from "../index";
+import { TodoItem } from "../Todoitem/TodoItem";
 import { ITodo } from "../../types/types";
 
 interface ITodos {
