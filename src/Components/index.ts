@@ -1,3 +1,3 @@
 export { TodoList } from "./TodoList/TodoList";
-export { TodoItem } from "./Todoitem/TodoItem";
+export { TodoItem } from "./TodoItem/TodoItem";
 export { Controls } from "./Controls/Controls";

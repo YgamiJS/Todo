@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { addTodo } from "../../store/TodosSlice";
+import { addTodo } from "@/store/TodosSlice";
 import { v4 as uuidv4 } from "uuid";
-import { useAppDispatch } from "../../hook/hook";
+import { useAppDispatch } from "@/hooks/useRTKHook";
 import React from "react";
-import { todoTextIsValid } from "../../utils/utils";
+import { todoTextIsValid } from "@/utils/utils";
 
 export const Controls = () => {
     const [text, setText] = useState("");
@@ -31,11 +31,11 @@ export const Controls = () => {
             <input
                 value={text}
                 onChange={change}
-                className="w-3/4 px-3 py-2 focus:outline-none border-gray-400 border-[1.5px] rounded-l-md"
+                className="w-3/4 px-3 py-2 focus:outline-none rounded-l-md"
             />
             <button
                 type="submit"
-                className="w-1/4 px-3 py-2 bg-gray-500 border-gray-400 border-[1.5px] rounded-r-md"
+                className="w-1/4 px-3 py-2 bg-gray-500 rounded-r-md hover:bg-gray-600  focus:bg-gray-600 text-gray-200"
             >
                 Add
             </button>
